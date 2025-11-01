@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" class="transition-colors duration-500">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <script>
+  if (localStorage.theme === 'dark') {
+    document.documentElement.classList.add('dark');
+  }
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { darkMode: 'class' };
+</script>
+</head>
+<body class="bg-gray-100 text-black dark:bg-[#000000] dark:text-white transition-colors duration-500">
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-8 py-4 bg-[#e1d5d2] text-black shadow-md fixed w-full top-0 z-50 dark:bg-[#1e1e1e] transition-colors duration-500">
+    <h1 class="text-2xl flex items-center dark:text-white">
+      MyPortf
+      <button 
+        id="theme-toggle"
+        class="ml-1 text-3xl bg-transparent border-none outline-none focus:outline-none hover:scale-110 transition-transform duration-150 ease-in-out delay-100"
+      >
+        🌖
+      </button>
+      lio
+    </h1>
+
+    <div class="space-x-6 text-black dark:text-white">
+      <a href="#home" class="text-[#ff1493] hover:text-[#ff1493] transition-colors duration-150 ease-in-out delay-100">Home</a>
+      <a href="./skills.html" class="hover:text-[#ff1493] transition-colors duration-150 ease-in-out delay-100">Skills</a>
+      <a href="./projects.html" class="hover:text-[#ff1493] transition-colors duration-150 ease-in-out delay-100">Projects</a>
+      <a href="./contact.html" class="hover:text-[#ff1493] transition-colors duration-150 ease-in-out delay-100">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <div id="home" class="flex flex-row justify-evenly pt-24 bg-gray-100 dark:bg-[#0e0e0e] transition-colors duration-500">
+    <div class="flex flex-col justify-center pl-4">
+      <h2 class="text-4xl md:text-6xl font-thin mb-4 text-black dark:text-white bg-transparent">
+        Hi, I'm <span class="font-semibold">Pubali Dutta</span><br>
+        <span class="text-[#ff1493] font-bold">Web Developer</span>
+      </h2>
+      <p class="max-w-2xl text-lg">
+        A passionate Computer Science student and web developer crafting elegant, responsive websites.
+      </p>
+    </div>
+    <div>
+      <img src="./website_img-removebg-preview.png" alt="Profile" />
+    </div>
+  </div>
+
+  <!-- Projects Section -->
+  <section id="projects" class="bg-white dark:bg-[#151515] py-10 px-8 transition-colors duration-500">
+    <h2 class="text-3xl text-center text-[#ff1493] mb-14 p-4 rounded-xl font-thin bg-gray-100 dark:bg-[#1e1e1e] transition-colors duration-500">
+      GET A PREVIEW OF MY WORK
+    </h2>
+
+    <div class="flex flex-col md:flex-row items-center mb-16 bg-gray-100 dark:bg-[#1e1e1e] rounded-md p-5 transition-colors duration-500">
+  <div class="md:w-1/2 pr-4">
+    <h3 class="text-2xl font-semibold mb-2">Tindog</h3>
+    <div class="flex flex-wrap gap-2 mt-3">
+      <span class="px-3 py-1 text-sm rounded-full bg-[#ff1493]/20 text-[#ff1493] font-medium">HTML</span>
+      <span class="px-3 py-1 text-sm rounded-full bg-[#ff1493]/20 text-[#ff1493] font-medium">CSS</span>
+      <span class="px-3 py-1 text-sm rounded-full bg-[#ff1493]/20 text-[#ff1493] font-medium">Bootstrap</span>
+    </div>
+    <br>
+    <p class="italic text-black dark:text-gray-300">
+      A fun startup-style landing page inspired by Tinder — but for dogs! Built using HTML, CSS, and Bootstrap, featuring modern responsive design.
+    </p>
+
+    <!-- ✅ Tech Stack Tags -->
+  </div>
+  <div class="md:w-1/2 flex justify-center">
+    <img src="./Screenshot 2025-10-22 143025.png" alt="Tindog Project" class="rounded-lg shadow-lg w-[80%]" />
+  </div>
+</div>
+
+
+    <!-- Project 2 -->
+    <div class="flex flex-col md:flex-row-reverse items-center mb-16 bg-gray-100 dark:bg-[#1e1e1e] rounded-md p-5 transition-colors duration-500">
+      <div class="md:w-1/2 pl-4">
+        <h3 class="text-2xl font-semibold mb-2">Chemistify</h3>
+        <span class="px-3 py-1 text-sm rounded-full bg-[#ff1493]/20 text-[#ff1493] font-medium">HTML</span>
+      <span class="px-3 py-1 text-sm rounded-full bg-[#ff1493]/20 text-[#ff1493] font-medium">CSS</span>
+      <br>
+      <br>
+        <p class="italic text-black dark:text-gray-300">
+          A chemistry-focused learning website featuring periodic table insights, element details, and organized categories for students.
+        </p>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <img src="./Screenshot 2025-10-22 143135.png" alt="Chemistify Project" class="rounded-lg shadow-lg w-[80%]" />
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="flex flex-col md:flex-row items-center mb-16 bg-gray-100 dark:bg-[#1e1e1e] rounded-md p-5 transition-colors duration-500">
+      <div class="md:w-1/2 pr-4">
+        <h3 class="text-2xl font-semibold mb-2"> Blog Website<span class="inline-flex items-center gap-2 bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 ml-3 rounded-full border border-yellow-300">
+  🚧
+</span></h3>
+        <span class="px-3 py-1 text-sm rounded-full bg-[#ff1493]/20 text-[#ff1493] font-medium">EJS</span>
+      <span class="px-3 py-1 text-sm rounded-full bg-[#ff1493]/20 text-[#ff1493] font-medium">EXPRESS</span>
+      <br><br>
+        <p class="italic text-black dark:text-gray-300">
+          A personal blog platform built with Node.js, Express, and EJS where users can create, edit, and delete posts without a database.
+        </p>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <img src="./Screenshot 2025-11-02 030740.png" alt="Blog Website Project" class="rounded-lg shadow-lg w-[80%]" />
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="flex flex-col md:flex-row-reverse items-center mb-16 opacity-80 bg-gray-100 dark:bg-[#1e1e1e] rounded-md p-5 transition-colors duration-500">
+      <div class="md:w-1/2 pl-4">
+        <h3 class="text-2xl font-semibold mb-2">Personal Expense Tracker</h3>
+        <span class="px-3 py-1 text-sm rounded-full bg-[#ff1493]/20 text-[#ff1493] font-medium">TAILWIND</span>
+      <span class="px-3 py-1 text-sm rounded-full bg-[#ff1493]/20 text-[#ff1493] font-medium">REACT</span>
+      <br><br>
+        <p class="italic text-black dark:text-gray-300">track your personal expenses on the go! Users can add or delete expense/income. Users can get graphs and piecharts to visualise their income and expenses.</p>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <div class="w-[80%] h-[250px] bg-gray-200 dark:bg-[#333] rounded-lg flex items-center justify-center transition-colors duration-500">
+        <img src="./Screenshot 2025-11-02 014802.png" alt="Blog Website Project" class="rounded-lg shadow-lg w-[80%]" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="flex flex-col md:flex-row items-center mb-16 opacity-80 bg-gray-100 dark:bg-[#1e1e1e] rounded-md p-5 transition-colors duration-500">
+      <div class="md:w-1/2 pr-4">
+        <h3 class="text-2xl font-semibold mb-2">Upcoming Project 5</h3>
+        <p class="italic text-gray-700 dark:text-gray-300">In progress... An exciting web application under development.</p>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <div class="w-[80%] h-[250px] bg-gray-200 dark:bg-[#333] rounded-lg flex items-center justify-center transition-colors duration-500">
+          <span class="text-gray-500 dark:text-gray-300">Preview Loading...</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="flex flex-col md:flex-row-reverse items-center opacity-80 bg-gray-100 dark:bg-[#1e1e1e] rounded-md p-5 transition-colors duration-500">
+      <div class="md:w-1/2 pl-4">
+        <h3 class="text-2xl font-semibold mb-2">Upcoming Project 6</h3>
+        <p class="italic text-gray-700 dark:text-gray-300">Coming soon... More features and creative designs on the way.</p>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <div class="w-[80%] h-[250px] bg-gray-200 dark:bg-[#333] rounded-lg flex items-center justify-center transition-colors duration-500">
+          <span class="text-gray-500 dark:text-gray-300">Preview Loading...</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./theme.js"></script>
+</body>
+</html>

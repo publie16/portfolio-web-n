@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="transition-colors duration-500">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects & Repos | Pubali Dutta</title>
+
+  <!-- Load Dark Mode Preference -->
+  <script>
+    if (localStorage.theme === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' };
+  </script>
+</head>
+
+<body class="bg-gray-100 text-black dark:bg-[#000000] dark:text-white transition-colors duration-500">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-8 py-4 bg-[#e1d5d2] text-black shadow-md fixed w-full top-0 z-50 dark:bg-[#1e1e1e] dark:text-white transition-colors duration-500">
+    <h1 class="text-2xl flex items-center">
+      MyPortf
+      <button 
+        id="theme-toggle" 
+        class="ml-1 text-3xl bg-transparent border-none outline-none focus:outline-none hover:scale-110 transition-transform duration-150 ease-in-out delay-100"
+      >
+        🌖
+      </button>
+      lio
+    </h1>
+
+    <div class="space-x-6 text-black dark:text-white">
+      <a href="./index.html" class="hover:text-[#ff1493] transition-colors duration-150 ease-in-out delay-100">Home</a>
+      <a href="./skills.html" class="hover:text-[#ff1493] transition-colors duration-150 ease-in-out delay-100">Skills</a>
+      <a href="#projects" class="text-[#ff1493] hover:text-[#ff1493] transition-colors duration-150 ease-in-out delay-100">Projects</a>
+      <a href="./contact.html" class="hover:text-[#ff1493] transition-colors duration-150 ease-in-out delay-100">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Projects Section -->
+  <section id="projects" class="pt-28 pb-16 px-8 md:px-16 lg:px-32 bg-gray-100 dark:bg-[#0e0e0e] transition-colors duration-500">
+    <h2 class="text-3xl font-thin text-center mb-12 text-[#ff1493] p-4 rounded-xl bg-gray-100 dark:bg-[#0e0e0e] transition-colors duration-500">
+      Project & Repos
+    </h2>
+
+    <!-- Grid Layout -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- Project 1 -->
+      <div class="bg-gray-100 dark:bg-[#1e1e1e] rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-transparent dark:border-[#333]">
+        <img src="./Screenshot 2025-10-22 143025.png" alt="Project Preview" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2 text-[#ff1493]">TINDOG</h3>
+          <p class="mb-4">Tindog is a playful, Bootstrap-based website — a “Tinder for dogs” . It features a clean, responsive, and aesthetic front end that lets users explore adorable dog profiles in a fun, modern layout.</p>
+          <div class="flex justify-between">
+            <a href="https://publie16.github.io/tindog/" class="px-8 py-2 bg-[#ff1493] text-white rounded-lg hover:bg-pink-600 transition">Website</a>
+            <a href="https://github.com/publie16/tindog.git" class="px-4 py-2 border border-[#ff1493] text-[#ff1493] rounded-lg hover:bg-[#ff1493] hover:text-white transition">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-gray-100 dark:bg-[#1e1e1e] rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-transparent dark:border-[#333]">
+        <img src="./Screenshot 2025-10-22 143135.png" alt="Portfolio Website" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2 text-[#ff1493]">CHEMISTIFY</h3>
+          <p class="mb-4">Chemistify is a fully hand-coded periodic table built from scratch using HTML and CSS Grid. It offers an interactive, visually clean layout with detailed element info — perfect for curious learners exploring chemistry in a fun, intuitive way.</p>
+          <div class="flex justify-between">
+            <a href="https://publie16.github.io/chemistify.net/" class="px-8 py-2 bg-[#ff1493] text-white rounded-lg hover:bg-pink-600 transition">Website</a>
+            <a href="https://github.com/publie16/chemistify.net.git" class="px-4 py-2 border border-[#ff1493] text-[#ff1493] rounded-lg hover:bg-[#ff1493] hover:text-white transition">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-gray-100 dark:bg-[#1e1e1e] rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-transparent dark:border-[#333]">
+        <img src="./Screenshot 2025-11-02 030740.png" alt="AI Learning App" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2 text-[#ff1493]">BLOGWEB <span class="inline-flex items-center gap-2 bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 ml-3 rounded-full border border-yellow-300">🚧</span></h3>
+          <p class="mb-4">BlogWeb is a simple yet dynamic blog platform where users can easily add, delete, and manage posts, with a built-in search feature to find blogs by topic quickly and efficiently.</p>
+          <div class="flex justify-between">
+            <a href="#" class="px-8 py-2 bg-[#ff1493] text-white rounded-lg hover:bg-pink-600 transition">Website</a>
+            <a href="https://github.com/publie16/Blogweb.git" class="px-4 py-2 border border-[#ff1493] text-[#ff1493] rounded-lg hover:bg-[#ff1493] hover:text-white transition">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="bg-gray-100 dark:bg-[#1e1e1e] rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-transparent dark:border-[#333]">
+        <img src="./Screenshot 2025-11-02 014802.png" alt="Medi-Genie" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2 text-[#ff1493]">PERSONAL EXPENSE TRACKER</h3>
+          <p class="mb-4">Personal Expense Tracker helps you record, manage, and analyze daily expenses effortlessly, giving a clear view of your spending habits and savings.
+
+</p>
+          <div class="flex justify-between">
+            <a href="https://expense-tracker-1-lac.vercel.app/" class="px-8 py-2 bg-[#ff1493] text-white rounded-lg hover:bg-pink-600 transition">Website</a>
+            <a href="https://github.com/publie16/expense-tracker-1.git" class="px-4 py-2 border border-[#ff1493] text-[#ff1493] rounded-lg hover:bg-[#ff1493] hover:text-white transition">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="bg-gray-100 dark:bg-[#1e1e1e] rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-transparent dark:border-[#333]">
+        <img src="./project5.png" alt="Periodic Table Explorer" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2 text-[#ff1493]">UPCOMING PROJECT</h3>
+          <p class="mb-4">---</p>
+          <div class="flex justify-between">
+            <a href="#" class="px-8 py-2 bg-[#ff1493] text-white rounded-lg hover:bg-pink-600 transition">Website</a>
+            <a href="#" class="px-4 py-2 border border-[#ff1493] text-[#ff1493] rounded-lg hover:bg-[#ff1493] hover:text-white transition">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="bg-gray-100 dark:bg-[#1e1e1e] rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-transparent dark:border-[#333]">
+        <img src="./project6.png" alt="Blog Website" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2 text-[#ff1493]">UPCOMING WEBSITE</h3>
+          <p class="mb-4">---</p>
+          <div class="flex justify-between">
+            <a href="#" class="px-8 py-2 bg-[#ff1493] text-white rounded-lg hover:bg-pink-600 transition">Website</a>
+            <a href="#" class="px-4 py-2 border border-[#ff1493] text-[#ff1493] rounded-lg hover:bg-[#ff1493] hover:text-white transition">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="./theme.js"></script>
+</body>
+</html>
